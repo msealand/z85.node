@@ -1,0 +1,26 @@
+{
+  "name": "z85",
+  "version": "0.0.1",
+  "description": "ZeroMQ Base-85 Encoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msealand/z85.node.git"
+  },
+  "keywords": [
+    "z85",
+    "zmq",
+    "zeromq",
+    "zap",
+    "curve"
+  ],
+  "author": "Michael Sealand <msealand@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msealand/z85.node/issues"
+  },
+  "homepage": "https://github.com/msealand/z85.node"
+}
