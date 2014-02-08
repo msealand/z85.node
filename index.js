@@ -54,8 +54,12 @@ module.exports.decode = function(string) {
 		string_len = string.length,
 		value = 0;
 	while (char_nbr < string_len) {
-		var ch = string.charCodeAt(char_nbr++);
-		value = (value * 85) + decoder[ch - 32];
+		var idx = string.charCodeAt(char_nbr++) - 32;
+		if ((idx < 0) || (idx >= decoder.length)) {
+			delete dest;
+			return;
+		}
+		value = (value * 85) + decoder[idx];
 		if ((char_nbr % 5) == 0) {
 			var divisor = 256 * 256 * 256;
 			while (divisor >= 1) {
