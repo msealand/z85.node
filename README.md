@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/msealand/z85.node.png)](https://travis-ci.org/msealand/z85.node)
+
 #z85
 
 [ZeroMQ Base-85 Encoding](http://rfc.zeromq.org/spec:32) for node.js
