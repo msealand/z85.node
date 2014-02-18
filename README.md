@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/msealand/z85.node.png)](https://travis-ci.org/msealand/z85.node)
+[![Coverage Status](https://coveralls.io/repos/msealand/z85.node/badge.png)](https://coveralls.io/r/msealand/z85.node)
 
 #z85
 
@@ -34,4 +35,11 @@ Install dev dependencies:
 
 Test:
 
-	$ make test
+	$ npm test
+
+With code coverage info (using istanbul):
+
+	$ npm install -g istanbul
+	$ make test-cov
+	
+_A full code coverage report can be found in coverage/lcov-report/index.html after the tests complete_

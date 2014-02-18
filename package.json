@@ -25,6 +25,7 @@
   "homepage": "https://github.com/msealand/z85.node",
   "devDependencies": {
     "should": "~3.1.2",
-    "mocha": "~1.17.1"
+    "mocha": "~1.17.1",
+    "coveralls": "~2.8.0"
   }
 }
