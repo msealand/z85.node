@@ -28,7 +28,13 @@ module.exports.encode = function(data) {
 		size = data.length,
 		value = 0;
 	while (byte_nbr < size) {
-		value = (value * 256) + data[byte_nbr++];
+		var characterCode;
+		if (typeof data == 'string') {
+			characterCode = data.charCodeAt(byte_nbr++);
+		} else {
+			characterCode = data[byte_nbr++];
+		}
+		value = (value * 256) + characterCode;
 		if ((byte_nbr % 4) == 0) {
 			var divisor = 85 * 85 * 85 * 85;
 			while (divisor >= 1) {
@@ -48,7 +54,7 @@ module.exports.decode = function(string) {
 		return null;
 	}
 	
-	var dest = new Buffer(string.length * 4 / 5);
+	var dest = new Buffer(string.length * 4 / 5),
 		byte_nbr = 0,
 		char_nbr = 0,
 		string_len = string.length,
