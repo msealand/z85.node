@@ -1,6 +1,6 @@
 {
   "name": "z85",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ZeroMQ Base-85 Encoding",
   "main": "index.js",
   "scripts": {
