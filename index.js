@@ -1,7 +1,7 @@
 // Implements http://rfc.zeromq.org/spec:32
 // Ported from https://github.com/zeromq/libzmq/blob/8cda54c52b08005b71f828243f22051cdbc482b4/src/zmq_utils.cpp#L77-L168
 
-var encoder = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-:+=^!/*?&<>()[]{}@%$#";
+var encoder = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-:+=^!/*?&<>()[]{}@%$#".split("");
 
 var decoder = [
     0x00, 0x44, 0x00, 0x54, 0x53, 0x52, 0x48, 0x00, 
